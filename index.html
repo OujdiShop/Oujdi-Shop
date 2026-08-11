@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>متجر الوجدي | كلشي ديال الدار فبلاصة وحدة</title>
+  <meta name="description" content="متجر الوجدي في فاس: مواد التنظيف، مستلزمات المنزل والمطبخ، المواد الغذائية، حقائب السفر وخدمة Damane Pay.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">متجر الوجدي — الجودة والثمن المناسب</div>
+
+  <header class="header">
+    <a class="brand" href="#home">
+      <img src="assets/logo.png" alt="شعار متجر الوجدي">
+      <div><strong>متجر الوجدي</strong><span>كلشي ديال الدار فبلاصة وحدة</span></div>
+    </a>
+    <nav>
+      <a href="#categories">الأقسام</a>
+      <a href="#products">المنتوجات</a>
+      <a href="#services">الخدمات</a>
+      <a href="#hours">التوقيت</a>
+      <a href="#contact">تواصل معنا</a>
+    </nav>
+    <button class="cart-btn" onclick="openCart()">🛒 السلة <b id="cartCount">0</b></button>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="pill">مرحبا بكم في متجر الوجدي</span>
+        <h1>كلشي ديال الدار<br><em>فبلاصة وحدة</em></h1>
+        <p>مواد التنظيف والمعطرة، مستلزمات المطبخ والمنزل، مواد غذائية، حقائب سفر وإكسسوارات — وأكثر.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#products">شوف المنتوجات</a>
+          <a class="btn ghost" href="https://wa.me/212721851643" target="_blank">تواصل واتساب</a>
+        </div>
+        <div class="price-note">منتوجات ابتداءً من <strong>5 دراهم</strong></div>
+      </div>
+      <div class="hero-card">
+        <img src="assets/logo.png" alt="متجر الوجدي">
+        <h3>متجر الوجدي</h3>
+        <p>فاس • حي النرجس</p>
+        <p class="gold">جودة عالية • ثمن مناسب</p>
+      </div>
+    </section>
+
+    <section id="categories" class="section">
+      <div class="section-head">
+        <div><span class="eyebrow">تسوق بسهولة</span><h2>أقسام المتجر</h2></div>
+        <p>اختار القسم اللي بغيتي ولقا احتياجاتك بسرعة.</p>
+      </div>
+      <div class="categories">
+        <button class="category" onclick="filterProducts('تنظيف')"><span>🧴</span><b>مواد التنظيف</b><small>ومعطرة</small></button>
+        <button class="category" onclick="filterProducts('منزل')"><span>🏠</span><b>المنزل والمطبخ</b><small>أدوات ومستلزمات</small></button>
+        <button class="category" onclick="filterProducts('غذائية')"><span>🛒</span><b>مواد غذائية</b><small>ومشروبات</small></button>
+        <button class="category" onclick="filterProducts('سفر')"><span>🧳</span><b>حقائب السفر</b><small>وإكسسوارات</small></button>
+      </div>
+    </section>
+
+    <section id="products" class="section products-section">
+      <div class="section-head">
+        <div><span class="eyebrow">اختيارات المتجر</span><h2>المنتوجات</h2></div>
+        <div class="filters">
+          <button class="filter active" onclick="filterProducts('الكل', this)">الكل</button>
+          <button class="filter" onclick="filterProducts('تنظيف', this)">تنظيف</button>
+          <button class="filter" onclick="filterProducts('منزل', this)">منزل</button>
+          <button class="filter" onclick="filterProducts('غذائية', this)">غذائية</button>
+          <button class="filter" onclick="filterProducts('سفر', this)">سفر</button>
+        </div>
+      </div>
+      <div id="productGrid" class="product-grid"></div>
+    </section>
+
+    <section id="services" class="section service-section">
+      <div class="service-box">
+        <div class="service-icon">💳</div>
+        <div>
+          <span class="eyebrow">خدمة جديدة</span>
+          <h2>خدمة DAMANE PAY متوفرة عندنا</h2>
+          <p>تسديد جميع الفواتير وجميع الخدمات بسهولة، بسرعة وأمان.</p>
+        </div>
+        <a class="btn primary" href="https://wa.me/212721851643?text=سلام%20بغيت%20نستافد%20من%20خدمة%20Damane%20Pay" target="_blank">استفسر الآن</a>
+      </div>
+    </section>
+
+    <section id="hours" class="section hours-section">
+      <div class="hours-card">
+        <span class="eyebrow">أوقات العمل</span>
+        <h2>مفتوحين 7/7</h2>
+        <div class="hours-row"><span>الاثنين → الأحد</span><strong>10:00 – 14:00</strong></div>
+        <div class="hours-row"><span>الفترة المسائية</span><strong>17:00 – 22:00</strong></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="contact-card">
+        <div>
+          <span class="eyebrow">زورونا</span>
+          <h2>متجر الوجدي</h2>
+          <p>حي النرجس، مدينة فاس — بالقرب من Golden Gym</p>
+        </div>
+        <div class="contact-actions">
+          <a class="contact-item" href="tel:+212721851643">📞 <span>0721851643</span></a>
+          <a class="contact-item" href="https://wa.me/212721851643" target="_blank">💬 واتساب</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/logo.png" alt="">
+    <div><strong>متجر الوجدي</strong><br><small>كلشي ديال الدار فبلاصة وحدة</small></div>
+    <span>© <span id="year"></span> متجر الوجدي</span>
+  </footer>
+
+  <div id="cartOverlay" class="overlay" onclick="closeCart(event)">
+    <aside class="cart" onclick="event.stopPropagation()">
+      <div class="cart-head"><h2>سلة المشتريات</h2><button onclick="closeCart()">×</button></div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-total"><span>المجموع</span><strong id="cartTotal">0 DH</strong></div>
+      <button class="btn primary full" onclick="checkoutWhatsApp()">طلب عبر واتساب</button>
+      <small class="cart-help">غادي يتحل واتساب برسالة جاهزة فيها الطلب ديالك.</small>
+    </aside>
+  </div>
+
+  <script src="products.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
