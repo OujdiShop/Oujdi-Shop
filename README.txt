@@ -1,10 +1,9 @@
-متجر الوجدي — نسخة GitHub Pages مصححة
+متجر الوجدي — نسخة جاهزة لـ GitHub Pages
 
-المهم:
-1) ارفع index.html ومجلد assets كاملين إلى root ديال repository.
-2) Settings → Pages → Deploy from a branch → main → /(root) → Save.
-3) ما تبدلش أسماء ملفات الصور.
+ارفع index.html ومجلد assets كاملين إلى نفس Repository.
+ثم GitHub → Settings → Pages → Deploy from branch → main → /(root) → Save.
 
-الصور الآن كلها داخل assets والمسارات داخل index.html هي assets/اسم-الصورة.
-الضغط على أي منتوج يفتح واتساب بالمنتوج مباشرة.
-رقم واتساب: 0721851643
+
+CATALOG UPDATE:
+تمت إضافة جميع المنتجات والأسعار التي أرسلها المستخدم في هذه المحادثة: العسل، العناية الشخصية، الأسنان، الشاي، الفوط الصحية، IBO، Kalyon، وCHAPDOR.
+ملاحظة: المنتجات الجديدة التي لم تكن لها صور مرفوعة مسبقاً تستعمل صورة احتياطية مؤقتة إلى حين إضافة صورها الأصلية.
