@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>متجر الوجدي | كلشي ديال الدار فبلاصة وحدة</title>
+<meta name="description" content="متجر الوجدي - منتجات النظافة والورقيات والعناية والمواد الغذائية.">
+<style>
+:root{--navy:#08275f;--blue:#0d4aa3;--gold:#f4b51b;--green:#176b42;--text:#14213d;--muted:#667085}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f6f8fc;color:var(--text)}
+a{color:inherit;text-decoration:none}button{font-family:inherit}.container{width:min(1180px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(8,39,95,.98);color:#fff;box-shadow:0 4px 18px #0002}
+.nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:22px}.logo{width:52px;height:52px;object-fit:contain;border-radius:12px;background:#fff}
+.navlinks{display:flex;gap:22px;font-weight:700}.navlinks a:hover{color:var(--gold)}
+.hero{background:linear-gradient(135deg,#062457,#0d4aa3 60%,#176b42);color:#fff;padding:60px 0}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:35px}
+.badge{display:inline-block;background:var(--gold);color:#10244d;padding:8px 16px;border-radius:999px;font-weight:900}
+.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.05;margin:18px 0}.hero p{font-size:19px;line-height:1.8;color:#e8eefc}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{padding:13px 20px;border-radius:12px;font-weight:900;border:0;cursor:pointer;display:inline-block}
+.btn.gold{background:var(--gold);color:#11234b}.btn.white{background:#fff;color:var(--navy)}
+.hero-card{background:#ffffff16;border:1px solid #ffffff33;padding:14px;border-radius:24px}.hero-card img{width:100%;height:360px;object-fit:contain;border-radius:18px;background:#fff;display:block}
+.section{padding:55px 0}.section-title{margin-bottom:24px}.section-title h2{font-size:34px;margin:0}.section-title p{color:var(--muted)}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:15px 0 28px}.filter{border:1px solid #dbe2ef;background:#fff;padding:9px 15px;border-radius:999px;cursor:pointer;font-weight:800}.filter.active,.filter:hover{background:var(--navy);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border-radius:20px;overflow:hidden;border:1px solid #e6eaf1;box-shadow:0 10px 25px #152b4b0c;transition:.2s;cursor:pointer}
+.card:hover{transform:translateY(-4px);box-shadow:0 15px 32px #152b4b18}
+.card-img{height:245px;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.card-img img{width:100%;height:100%;object-fit:contain;padding:5px;display:block;background:#fff}
+.card-body{padding:17px}.tag{font-size:12px;color:var(--green);font-weight:900}.card h3{margin:7px 0;font-size:21px}
+.card p{color:var(--muted);min-height:42px;line-height:1.6;margin:0 0 13px}.price{font-size:22px;font-weight:1000;color:var(--navy)}
+.order{display:block;margin-top:12px;background:#19a957;color:#fff;text-align:center;padding:10px 12px;border-radius:10px;font-weight:900}
+.offer{background:linear-gradient(135deg,#fff8dc,#fff);border:2px solid #f3d06a;border-radius:22px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.offer img{width:100%;height:260px;object-fit:contain;border-radius:16px;background:#fff}
+.service{background:#062457;color:#fff;border-radius:24px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.service img{width:100%;max-height:340px;object-fit:contain;border-radius:16px;background:#fff}
+.hours{background:#fff;border-radius:20px;padding:26px;border:1px solid #e6eaf1;text-align:center}.hours strong{font-size:24px;color:var(--navy)}
+footer{background:#071c45;color:#dfe8fb;padding:38px 0;margin-top:20px}.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.whatsapp{position:fixed;left:18px;bottom:18px;background:#19a957;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:27px;font-weight:900;box-shadow:0 8px 25px #0003;z-index:30}
+@media(max-width:900px){.hero-grid,.offer,.service{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}
+@media(max-width:560px){.grid{grid-template-columns:1fr 1fr;gap:12px}.card-img{height:180px}.card h3{font-size:17px}.card-body{padding:12px}.hero{padding-top:45px}.hero-card img{height:280px}}
+</style>
+</head>
+<body>
+<header><div class="container nav">
+<a class="brand" href="#"><img class="logo" src="assets/logo.png" alt="متجر الوجدي"><span>متجر الوجدي</span></a>
+<nav class="navlinks"><a href="#products">المنتوجات</a><a href="#offers">العروض</a><a href="#services">الخدمات</a><a href="#hours">التوقيت</a></nav>
+</div></header>
+
+<section class="hero"><div class="container hero-grid"><div>
+<span class="badge">مرحبا بكم 👋</span><h1>كلشي ديال الدار<br>فبلاصة وحدة</h1>
+<p>منتوجات النظافة، الورقيات، العناية، المواد الغذائية والعروض اليومية بأثمنة مناسبة.</p>
+<div class="cta"><a class="btn gold" href="#products">شوف المنتوجات</a><a class="btn white" href="https://wa.me/212721851643">تواصل معنا</a></div>
+</div><div class="hero-card"><img src="assets/kitchen.png" alt="منتوجات متجر الوجدي"></div></div></section>
+
+<section class="section" id="products"><div class="container">
+<div class="section-title"><h2>المنتوجات والعروض</h2><p>اختار المنتوج واضغط عليه باش تطلبو مباشرة عبر واتساب.</p></div>
+<div class="filters" id="filters"></div><div class="grid" id="productGrid"></div>
+</div></section>
+
+<section class="section" id="offers"><div class="container"><div class="section-title"><h2>عروض خاصة</h2></div>
+<div class="offer"><img src="assets/valises.png" alt="حقائب السفر"><div><span class="tag">عرض خاص</span><h2>حقائب السفر Fashion</h2>
+<p>سليكون، عجلات 360°، خفيفة ومناسبة للسفر والتنقل.</p><div class="price">200 درهم للصغيرة • 300 درهم للكبير</div>
+<a class="order" href="https://wa.me/212721851643?text=السلام%20عليكم%2C%20بغيت%20نطلب%20حقائب%20السفر" target="_blank">📱 طلب عبر واتساب</a></div></div>
+</div></section>
+
+<section class="section" id="services"><div class="container"><div class="service">
+<div><h2>خدمة DAMANE PAY</h2><p style="line-height:1.9">تسديد الفواتير والخدمات وتحويل الأموال من متجر الوجدي. خدمة سريعة وآمنة.</p>
+<a class="btn gold" href="https://wa.me/212721851643">استفسر عبر واتساب</a></div><img src="assets/damane.jpg" alt="خدمة Damane Pay"></div></div></section>
+
+<section class="section" id="hours"><div class="container"><div class="hours"><h2>توقيت المحل</h2>
+<p>الاثنين إلى الأحد • <strong>7/7</strong></p><p><strong>10:00 – 14:00</strong></p><p><strong>17:00 – 22:00</strong></p></div></div></section>
+
+<footer><div class="container footer-grid"><div><strong style="font-size:22px">متجر الوجدي</strong><br>كلشي ديال الدار فبلاصة وحدة</div>
+<div>📞 0721851643<br>📍 فاس</div><div>جودة • أثمنة مناسبة • خدمة قريبة</div></div></footer>
+<a class="whatsapp" href="https://wa.me/212721851643" aria-label="واتساب">✆</a>
+
+<script>
+const products=[{"name": "حليب COLAIMO", "desc": "الحليب الصغير 500ml والكبير 1L", "price": "ابتداءً من 5 دراهم", "cat": "مواد غذائية", "img": "milk.png"}, {"name": "سائل غسل الصحون DIMEX", "desc": "1.25L • روائح متعددة", "price": "16 درهم", "cat": "تنظيف", "img": "dimex.png"}, {"name": "غسيل الأواني Ultra Pak", "desc": "1250ml • تفاح ولافندر", "price": "13 درهم", "cat": "تنظيف", "img": "ultrapak.png"}, {"name": "ورق التواليت", "desc": "Blandoux / Nua / Pandoo", "price": "ابتداءً من 23 درهم", "cat": "ورقيات", "img": "toilet.png"}, {"name": "صابون سائل لليدين PREDO CARE", "desc": "روائح متعددة • عناية يومية", "price": "13 درهم", "cat": "عناية", "img": "predo.png"}, {"name": "ورق المطبخ Nua", "desc": "3 رول • امتصاص قوي", "price": "15 درهم", "cat": "ورقيات", "img": "kitchen.png"}, {"name": "ورق المطبخ Sanny MAXI", "desc": "2 رول + MAXI", "price": "12 درهم", "cat": "ورقيات", "img": "kitchen.png"}, {"name": "صابون سائل MARSAVON", "desc": "ليمون وفيرفين • 500ml", "price": "12 درهم", "cat": "عناية", "img": "marsavon.png"}, {"name": "حقائب سفر Fashion", "desc": "سليكون صغيرة وكبيرة • عجلات 360°", "price": "200 / 300 درهم", "cat": "عروض", "img": "valises.png"}, {"name": "مزيلات عرق أصلية", "desc": "Balea • Nivea • Dove", "price": "ابتداءً من 25 درهم", "cat": "عناية", "img": "deodorants.png"}];
+const grid=document.getElementById('productGrid'),filters=document.getElementById('filters');
+const cats=['الكل',...new Set(products.map(p=>p.cat))];
+filters.innerHTML=cats.map((c,i)=>`<button type="button" class="filter ${i===0?'active':''}" data-cat="${c}">${c}</button>`).join('');
+
+function waUrl(p){
+  const msg=`السلام عليكم، بغيت نطلب: ${p.name} — ${p.price}`;
+  return 'https://wa.me/212721851643?text='+encodeURIComponent(msg);
+}
+function render(cat='الكل'){
+ const list=cat==='الكل'?products:products.filter(p=>p.cat===cat);
+ grid.innerHTML=list.map(p=>`<article class="card" data-wa="${waUrl(p)}">
+   <div class="card-img"><img src="assets/${p.img}" alt="${p.name}" loading="lazy" onerror="this.onerror=null;this.src='assets/logo.png'"></div>
+   <div class="card-body"><div class="tag">${p.cat}</div><h3>${p.name}</h3><p>${p.desc}</p><div class="price">${p.price}</div>
+   <a class="order" href="${waUrl(p)}" target="_blank" rel="noopener">📱 طلب عبر واتساب</a></div>
+ </article>`).join('');
+ grid.querySelectorAll('.card').forEach(card=>{
+   card.addEventListener('click',e=>{
+     if(e.target.closest('a')) return;
+     window.open(card.dataset.wa,'_blank');
+   });
+ });
+}
+filters.querySelectorAll('.filter').forEach(b=>b.addEventListener('click',()=>{
+ filters.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');render(b.dataset.cat);
+}));
+render();
+</script>
+</body></html>
