@@ -43,7 +43,7 @@ footer{background:#071c45;color:#dfe8fb;padding:38px 0;margin-top:20px}.footer-g
 </head>
 <body>
 <header><div class="container nav">
-<a class="brand" href="#"><img class="logo" src="assets/logo.png" alt="متجر الوجدي"><span>متجر الوجدي</span></a>
+<a class="brand" href="#"><img class="logo" src="logo.png" alt="متجر الوجدي"><span>متجر الوجدي</span></a>
 <nav class="navlinks"><a href="#products">المنتوجات</a><a href="#offers">العروض</a><a href="#services">الخدمات</a><a href="#hours">التوقيت</a></nav>
 </div></header>
 
@@ -51,7 +51,7 @@ footer{background:#071c45;color:#dfe8fb;padding:38px 0;margin-top:20px}.footer-g
 <span class="badge">مرحبا بكم 👋</span><h1>كلشي ديال الدار<br>فبلاصة وحدة</h1>
 <p>منتوجات النظافة، الورقيات، العناية، المواد الغذائية والعروض اليومية بأثمنة مناسبة.</p>
 <div class="cta"><a class="btn gold" href="#products">شوف المنتوجات</a><a class="btn white" href="https://wa.me/212721851643">تواصل معنا</a></div>
-</div><div class="hero-card"><img src="assets/kitchen.png" alt="منتوجات متجر الوجدي"></div></div></section>
+</div><div class="hero-card"><img src="kitchen.png" alt="منتوجات متجر الوجدي"></div></div></section>
 
 <section class="section" id="products"><div class="container">
 <div class="section-title"><h2>المنتوجات والعروض</h2><p>اختار المنتوج واضغط عليه باش تطلبو مباشرة عبر واتساب.</p></div>
@@ -59,14 +59,14 @@ footer{background:#071c45;color:#dfe8fb;padding:38px 0;margin-top:20px}.footer-g
 </div></section>
 
 <section class="section" id="offers"><div class="container"><div class="section-title"><h2>عروض خاصة</h2></div>
-<div class="offer"><img src="assets/valises.png" alt="حقائب السفر"><div><span class="tag">عرض خاص</span><h2>حقائب السفر Fashion</h2>
+<div class="offer"><img src="valises.png" alt="حقائب السفر"><div><span class="tag">عرض خاص</span><h2>حقائب السفر Fashion</h2>
 <p>سليكون، عجلات 360°، خفيفة ومناسبة للسفر والتنقل.</p><div class="price">200 درهم للصغيرة • 300 درهم للكبير</div>
 <a class="order" href="https://wa.me/212721851643?text=السلام%20عليكم%2C%20بغيت%20نطلب%20حقائب%20السفر" target="_blank">📱 طلب عبر واتساب</a></div></div>
 </div></section>
 
 <section class="section" id="services"><div class="container"><div class="service">
 <div><h2>خدمة DAMANE PAY</h2><p style="line-height:1.9">تسديد الفواتير والخدمات وتحويل الأموال من متجر الوجدي. خدمة سريعة وآمنة.</p>
-<a class="btn gold" href="https://wa.me/212721851643">استفسر عبر واتساب</a></div><img src="assets/damane.jpg" alt="خدمة Damane Pay"></div></div></section>
+<a class="btn gold" href="https://wa.me/212721851643">استفسر عبر واتساب</a></div><img src="damane.jpg" alt="خدمة Damane Pay"></div></div></section>
 
 <section class="section" id="hours"><div class="container"><div class="hours"><h2>توقيت المحل</h2>
 <p>الاثنين إلى الأحد • <strong>7/7</strong></p><p><strong>10:00 – 14:00</strong></p><p><strong>17:00 – 22:00</strong></p></div></div></section>
@@ -88,7 +88,7 @@ function waUrl(p){
 function render(cat='الكل'){
  const list=cat==='الكل'?products:products.filter(p=>p.cat===cat);
  grid.innerHTML=list.map(p=>`<article class="card" data-wa="${waUrl(p)}">
-   <div class="card-img"><img src="assets/${p.img}" alt="${p.name}" loading="lazy" onerror="this.onerror=null;this.src='assets/logo.png'"></div>
+   <div class="card-img"><img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.onerror=null;this.src='logo.png'"></div>
    <div class="card-body"><div class="tag">${p.cat}</div><h3>${p.name}</h3><p>${p.desc}</p><div class="price">${p.price}</div>
    <a class="order" href="${waUrl(p)}" target="_blank" rel="noopener">📱 طلب عبر واتساب</a></div>
  </article>`).join('');
