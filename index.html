@@ -1,107 +1,92 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>متجر الوجدي | كلشي ديال الدار فبلاصة وحدة</title>
-<meta name="description" content="متجر الوجدي بفاس - منتجات التنظيف، العناية، المواد الغذائية والعروض. الطلب عبر واتساب.">
+<meta name="description" content="متجر الوجدي - منتجات منزلية، نظافة، ورقيات، عناية ومواد غذائية بأثمنة مناسبة.">
 <style>
 :root{--navy:#08275f;--blue:#0d4aa3;--gold:#f4b51b;--green:#176b42;--text:#14213d;--muted:#667085}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f6f8fc;color:var(--text)}
+*{box-sizing:border-box} body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f6f8fc;color:var(--text)}
 a{color:inherit;text-decoration:none}.container{width:min(1180px,92%);margin:auto}
 header{position:sticky;top:0;z-index:20;background:rgba(8,39,95,.97);color:white;box-shadow:0 4px 18px #0002}
 .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:24px}.logo{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);background:#fff}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:24px}.logo{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid var(--gold);background:white}
 .navlinks{display:flex;gap:22px;font-weight:700}.navlinks a:hover{color:var(--gold)}
-.hero{background:linear-gradient(135deg,#062457,#0d4aa3 60%,#176b42);color:#fff;padding:68px 0 55px}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px}
+.hero{background:linear-gradient(135deg,#062457,#0d4aa3 60%,#176b42);color:white;padding:70px 0 58px}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:35px}
 .badge{display:inline-block;background:var(--gold);color:#10244d;padding:8px 16px;border-radius:999px;font-weight:900}
 .hero h1{font-size:clamp(38px,6vw,68px);line-height:1.05;margin:18px 0}.hero p{font-size:20px;line-height:1.8;color:#e8eefc}
 .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{padding:13px 20px;border-radius:12px;font-weight:900;border:0;cursor:pointer}
 .btn.gold{background:var(--gold);color:#11234b}.btn.white{background:white;color:var(--navy)}
-.hero-card{background:#ffffff16;border:1px solid #ffffff33;padding:12px;border-radius:24px}.hero-card img{width:100%;height:350px;object-fit:cover;border-radius:18px;display:block}
-.section{padding:55px 0}.title{margin-bottom:25px}.title h2{font-size:34px;margin:0 0 7px}.title p{color:var(--muted);margin:0}
-.filters{display:flex;gap:9px;flex-wrap:wrap;margin:15px 0 28px}.filter{border:1px solid #dbe2ef;background:#fff;padding:9px 15px;border-radius:999px;cursor:pointer;font-weight:800}
-.filter.active,.filter:hover{background:var(--navy);color:#fff}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#fff;border-radius:20px;overflow:hidden;border:1px solid #e6eaf1;box-shadow:0 10px 25px #152b4b0c;transition:.2s}
-.card:hover{transform:translateY(-4px);box-shadow:0 15px 32px #152b4b18}
-.card-img{height:255px;background:#fff}.card-img img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-card{background:#ffffff16;border:1px solid #ffffff33;padding:14px;border-radius:24px}.hero-card img{width:100%;height:360px;object-fit:cover;border-radius:18px;display:block}
+.section{padding:55px 0}.section-title{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:24px}
+.section-title h2{font-size:34px;margin:0}.section-title p{color:var(--muted);margin:0}
+.filters{display:flex;gap:9px;flex-wrap:wrap;margin:15px 0 28px}.filter{border:1px solid #dbe2ef;background:white;padding:9px 15px;border-radius:999px;cursor:pointer;font-weight:800}
+.filter.active,.filter:hover{background:var(--navy);color:white}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:white;border-radius:20px;overflow:hidden;border:1px solid #e6eaf1;box-shadow:0 10px 25px #152b4b0c;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 15px 32px #152b4b18}.card-img{height:245px;background:#f4f5f7}.card-img img{width:100%;height:100%;object-fit:contain;padding:8px;display:block;background:#fff}
 .card-body{padding:17px}.tag{font-size:12px;color:var(--green);font-weight:900}.card h3{margin:7px 0;font-size:21px}
-.order-btn{margin-top:12px;width:100%;padding:11px;border:0;border-radius:10px;background:#19a957;color:#fff;font-weight:900;font-family:inherit;cursor:pointer}
-.info{background:#fff;border:1px solid #e6eaf1;border-radius:22px;padding:28px;text-align:center}
+.card p{color:var(--muted);min-height:42px;line-height:1.6;margin:0 0 13px}.price{font-size:22px;font-weight:1000;color:var(--navy)}.order-btn{margin-top:12px;width:100%;padding:11px;border:0;border-radius:10px;background:#19a957;color:#fff;font-weight:900;font-family:inherit;cursor:pointer}
+.offer{background:linear-gradient(135deg,#fff8dc,#fff);border:2px solid #f3d06a;border-radius:22px;padding:28px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.offer img{width:100%;height:260px;object-fit:cover;border-radius:16px}
+.service{background:#062457;color:white;border-radius:24px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.service img{width:100%;max-height:340px;object-fit:cover;border-radius:16px}
+.hours{background:#fff;border-radius:20px;padding:26px;border:1px solid #e6eaf1;text-align:center}.hours strong{font-size:24px;color:var(--navy)}
 footer{background:#071c45;color:#dfe8fb;padding:38px 0;margin-top:20px}.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .whatsapp{position:fixed;left:18px;bottom:18px;background:#19a957;color:white;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:27px;font-weight:900;box-shadow:0 8px 25px #0003;z-index:30}
-@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}
-@media(max-width:560px){.grid{grid-template-columns:1fr}.hero{padding-top:45px}.hero-card img{height:280px}.title h2{font-size:28px}}
-</style>
-</head>
+@media(max-width:900px){.hero-grid,.offer,.service{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.navlinks{display:none}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.hero{padding-top:45px}.hero-card img{height:280px}.section-title{display:block}.section-title h2{font-size:28px;margin-bottom:7px}}
+.no-photo{display:flex!important;align-items:center;justify-content:center;font-size:44px;background:#f3f5f8}.no-photo::after{content:"📦"}</style></head>
 <body>
 <header><div class="container nav">
-<a class="brand" href="#"><img class="logo" src="assets/logo-3.png" alt="متجر الوجدي"><span>متجر الوجدي</span></a>
-<nav class="navlinks"><a href="#products">المنتوجات</a><a href="#about">الخدمة</a><a href="#hours">التوقيت</a></nav>
+<a class="brand" href="#"><img class="logo" src="assets/logo.png" alt="متجر الوجدي"><span>متجر الوجدي</span></a>
+<nav class="navlinks"><a href="#products">المنتوجات</a><a href="#offers">العروض</a><a href="#services">الخدمات</a><a href="#hours">التوقيت</a></nav>
 </div></header>
 
-<section class="hero"><div class="container hero-grid">
-<div><span class="badge">متجر الوجدي • فاس</span>
-<h1>كلشي ديال الدار<br>فبلاصة وحدة</h1>
-<p>شوف العروض والمنتوجات الجديدة بالصور ديالها، واختار اللي بغيتي وطلب مباشرة عبر واتساب.</p>
-<div class="cta"><a class="btn gold" href="#products">شوف المنتوجات</a><a class="btn white" href="https://wa.me/212721851643">طلب عبر واتساب</a></div>
-</div>
-<div class="hero-card"><img src="assets/logo-3.png" alt="متجر الوجدي"></div>
-</div></section>
+<section class="hero"><div class="container hero-grid"><div>
+<span class="badge">مرحبا بكم 👋</span><h1>كلشي ديال الدار<br>فبلاصة وحدة</h1>
+<p>منتوجات النظافة، الورقيات، العناية، المواد الغذائية والعروض اليومية بأثمنة مناسبة.</p>
+<div class="cta"><a class="btn gold" href="#products">شوف المنتوجات</a><a class="btn white" href="https://wa.me/212721851643">تواصل معنا</a></div>
+</div><div class="hero-card"><img src="assets/kitchen.png" alt="منتوجات متجر الوجدي"></div></div></section>
 
 <section class="section" id="products"><div class="container">
-<div class="title"><h2>المنتوجات والعروض الجديدة</h2><p>كل صورة صيفطتيها مدموجة فالمكان ديال الفئة ديالها.</p></div>
-<div class="filters" id="filters"></div>
-<div class="grid" id="grid"></div>
+<div class="section-title"><div><h2>المنتوجات والعروض</h2><p>المنتوجات اللي صيفطتي ليا مدموجة فالموقع مع الأثمنة.</p></div></div>
+<div class="filters" id="filters"></div><div class="grid" id="productGrid"></div>
 </div></section>
 
-<section class="section" id="about"><div class="container">
-<div class="info"><h2>📱 الطلب عبر واتساب</h2>
-<p>كليكي على أي فئة، ومن بعد على «طلب عبر واتساب». غادي يتحل واتساب برسالة جاهزة.</p>
-<a class="btn gold" href="https://wa.me/212721851643">تواصل معنا • 0721851643</a></div>
+<section class="section" id="offers"><div class="container"><div class="section-title"><div><h2>عروض خاصة</h2><p>اختيارات مميزة من متجر الوجدي.</p></div></div>
+<div class="offer"><img src="assets/valises.png" alt="حقائب السفر"><div><span class="tag">عرض خاص</span><h2>حقائب السفر Fashion</h2>
+<p>سليكون، عجلات 360°، خفيفة ومناسبة للسفر والتنقل.</p><div class="price">200 درهم للصغيرة • 300 درهم للكبير</div></div></div>
 </div></section>
 
-<section class="section" id="hours"><div class="container"><div class="info">
-<h2>توقيت المحل</h2><p>الاثنين إلى الأحد • <b>7/7</b></p><p><b>10:00 – 14:00</b></p><p><b>17:00 – 22:00</b></p>
-<p>📍 فاس - النرجس، قبل شارع ابن علي بالقرب من Golden Gym</p>
-</div></div></section>
+<section class="section" id="services"><div class="container"><div class="service">
+<div><h2>خدمة DAMANE PAY</h2><p style="line-height:1.9">تسديد الفواتير والخدمات وتحويل الأموال من متجر الوجدي. خدمة سريعة وآمنة.</p>
+<a class="btn gold" href="https://wa.me/212721851643">استفسر عبر واتساب</a></div><img src="assets/damane.jpg" alt="خدمة Damane Pay"></div></div></section>
 
-<footer><div class="container footer-grid">
-<div><strong style="font-size:22px">متجر الوجدي</strong><br>كلشي ديال الدار فبلاصة وحدة</div>
-<div>📞 0721851643<br>📍 فاس</div><div>جودة • أثمنة مناسبة • خدمة قريبة</div>
-</div></footer>
+<section class="section" id="hours"><div class="container"><div class="hours"><h2>توقيت المحل</h2>
+<p>الاثنين إلى الأحد • <strong>7/7</strong></p><p><strong>10:00 – 14:00</strong></p><p><strong>17:00 – 22:00</strong></p></div></div></section>
+
+<footer><div class="container footer-grid"><div><strong style="font-size:22px">متجر الوجدي</strong><br>كلشي ديال الدار فبلاصة وحدة</div>
+<div>📞 0721851643<br>📍 فاس</div><div>جودة • أثمنة مناسبة • خدمة قريبة</div></div></footer>
 <a class="whatsapp" href="https://wa.me/212721851643" aria-label="واتساب">✆</a>
 
 <script>
-const items = [{"title": "منتجات التنظيف", "cat": "تنظيف", "img": "finish-cleaning.png"}, {"title": "عروض الشاي", "cat": "غذائية", "img": "tea.png"}, {"title": "العناية الشخصية", "cat": "عناية", "img": "personal-care-1.png"}, {"title": "العناية بالفم والأسنان", "cat": "عناية", "img": "oral-care.png"}, {"title": "العناية اليومية", "cat": "عناية", "img": "personal-care-2.png"}, {"title": "جل الاستحمام والعناية", "cat": "عناية", "img": "shower-care.png"}, {"title": "مناديل مبللة", "cat": "عناية", "img": "baby-wipes.png"}, {"title": "منظفات مركزة", "cat": "تنظيف", "img": "cleaning-products.png"}, {"title": "Johnson's للعناية", "cat": "عناية", "img": "johnsons-care.png"}, {"title": "عسل طبيعي 100%", "cat": "غذائية", "img": "honey.png"}, {"title": "قطن الأذن", "cat": "عناية", "img": "cotton-sticks.png"}, {"title": "منظفات الزجاج", "cat": "تنظيف", "img": "glass-cleaners.png"}];
-const grid = document.getElementById('grid');
-const filters = document.getElementById('filters');
-const cats = ['الكل', ...new Set(items.map(x=>x.cat))];
-filters.innerHTML = cats.map((c,i)=>`<button class="filter ${i===0?'active':''}" data-cat="${c}">${c}</button>`).join('');
-
+const products = [{"name": "حليب COLAIMO 500ml", "desc": "حليب UHT طبيعي • مصدر للكالسيوم والبروتين", "price": "5 دراهم", "cat": "مواد غذائية", "img": "milk.png"}, {"name": "حليب COLAIMO 1L", "desc": "حليب UHT طبيعي • مصدر للكالسيوم والبروتين", "price": "10 دراهم", "cat": "مواد غذائية", "img": "milk.png"}, {"name": "سائل غسل الصحون DIMEX – فراولة حمراء", "desc": "1.25L • إزالة فعالة للدهون ولمعان قوي", "price": "16 درهم", "cat": "تنظيف", "img": "dimex.png"}, {"name": "سائل غسل الصحون DIMEX – رمان", "desc": "1.25L • رائحة منعشة وقوة في إزالة الدهون", "price": "16 درهم", "cat": "تنظيف", "img": "dimex.png"}, {"name": "سائل غسل الصحون DIMEX – كلاسيك", "desc": "1.25L • نظافة ورغوة غنية", "price": "16 درهم", "cat": "تنظيف", "img": "dimex.png"}, {"name": "سائل غسل الصحون DIMEX – زهرة البرتقال", "desc": "1.25L • رائحة عطرة ولمعان يدوم", "price": "16 درهم", "cat": "تنظيف", "img": "dimex.png"}, {"name": "غسيل الأواني Ultra Pak – تفاح", "desc": "1250ml • رائحة التفاح المنعشة", "price": "13 درهم", "cat": "تنظيف", "img": "ultrapak.png"}, {"name": "غسيل الأواني Ultra Pak – لافندر", "desc": "1250ml • رائحة اللافندر الهادئة", "price": "13 درهم", "cat": "تنظيف", "img": "ultrapak.png"}, {"name": "ورق التواليت Blandoux", "desc": "نعومة وجودة • 3 طبقات", "price": "23 درهم", "cat": "ورقيات", "img": "toilet.png"}, {"name": "ورق التواليت Nua", "desc": "9 رول • 3 طبقات • Super Soft", "price": "25 درهم", "cat": "ورقيات", "img": "toilet.png"}, {"name": "ورق التواليت Pandoo", "desc": "7+2 مجاناً • 3 طبقات", "price": "23 درهم", "cat": "ورقيات", "img": "toilet.png"}, {"name": "صابون سائل لليدين PREDO CARE – انتعاش البحر", "desc": "ترطيب وعناية • رائحة منعشة", "price": "13 درهم", "cat": "عناية", "img": "predo.png"}, {"name": "صابون سائل لليدين PREDO CARE – ورد", "desc": "ترطيب وعناية • رائحة الورد الناعمة", "price": "13 درهم", "cat": "عناية", "img": "predo.png"}, {"name": "صابون سائل لليدين PREDO CARE – ياسمين", "desc": "ترطيب وعناية • رائحة الياسمين", "price": "13 درهم", "cat": "عناية", "img": "predo.png"}, {"name": "ورق المطبخ Nua", "desc": "3 رول • امتصاص قوي • 3 طبقات", "price": "15 درهم", "cat": "ورقيات", "img": "kitchen.png"}, {"name": "ورق المطبخ Sanny MAXI", "desc": "2 رول + MAXI • متعدد الاستعمالات", "price": "12 درهم", "cat": "ورقيات", "img": "kitchen.png"}, {"name": "صابون سائل MARSAVON – ليمون", "desc": "500ml • نظافة طبيعية ورائحة منعشة", "price": "12 درهم", "cat": "عناية", "img": "marsavon.png"}, {"name": "صابون سائل MARSAVON – فيرفين", "desc": "500ml • عناية وحماية يومية", "price": "12 درهم", "cat": "عناية", "img": "marsavon.png"}, {"name": "حقيبة سفر Fashion – صغيرة", "desc": "سيليكون • عجلات 360° • خفيفة وسهلة الحمل", "price": "200 درهم", "cat": "عروض", "img": "valises.png"}, {"name": "حقيبة سفر Fashion – كبيرة", "desc": "سيليكون • عجلات 360° • مساحة تخزين واسعة", "price": "300 درهم", "cat": "عروض", "img": "valises.png"}, {"name": "Balea Men Extra Dry", "desc": "مزيل عرق • حماية 72 ساعة", "price": "25 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "Balea Men Invisible Dry", "desc": "مزيل عرق • حماية 48 ساعة", "price": "25 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "Nivea Men Black & White Fresh", "desc": "مزيل عرق • حماية 72 ساعة", "price": "30 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "Nivea Men Dry Impact", "desc": "مزيل عرق • حماية 72 ساعة", "price": "30 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "Nivea Black & White Fresh XL", "desc": "مزيل عرق • حجم XL • حماية 72 ساعة", "price": "30 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "Nivea Black & White Invisible XL", "desc": "مزيل عرق • حجم XL • حماية 72 ساعة", "price": "30 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "Dove Original Stick", "desc": "مزيل عرق • رائحة أصلية", "price": "30 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "Nivea Roll-On Double Effect", "desc": "مزيل عرق رول-أون • حماية 72 ساعة", "price": "25 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "Nivea Roll-On Protect & Care", "desc": "مزيل عرق رول-أون • حماية 72 ساعة", "price": "25 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "Balea Sensitive", "desc": "مزيل عرق • Sensitive • 0% Aluminium", "price": "25 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "Balea Vanilla & Kokos", "desc": "مزيل عرق • فانيلا وجوز الهند", "price": "25 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "Balea Extra Dry", "desc": "مزيل عرق • حماية 72 ساعة", "price": "25 درهم", "cat": "عناية", "img": "deodorants.png"}, {"name": "عسل البرتقال Miel d'Oranger – 1Kg", "desc": "عسل طبيعي 100% • مذاق أصيل • غني بالمغذيات", "price": "75 درهم", "cat": "غذائية", "img": "honey_orange.jpg"}, {"name": "عسل الأعشاب Miel d'Herbes – 1Kg", "desc": "عسل طبيعي 100% • جودة عالية ومذاق أصيل", "price": "80 درهم", "cat": "غذائية", "img": "honey_herbs.jpg"}, {"name": "عسل النواة Miel Nawa – 1Kg", "desc": "عسل طبيعي 100% • غني بالمغذيات والفيتامينات", "price": "100 درهم", "cat": "غذائية", "img": "honey_nawa.jpg"}, {"name": "عسل الخروب Miel de Caroube – 1Kg", "desc": "عسل طبيعي 100% • مذاق أصيل وجودة عالية", "price": "100 درهم", "cat": "غذائية", "img": "honey_carob.jpg"}, {"name": "عسل الكالبتوس Miel d'Eucalyptus – 1Kg", "desc": "عسل طبيعي 100% • جودة عالية ومذاق أصيل", "price": "110 درهم", "cat": "غذائية", "img": "honey_eucalyptus.jpg"}, {"name": "عسل الدغموس Miel d'Aghmous – 1Kg", "desc": "عسل طبيعي 100% • جودة عالية ومذاق أصيل", "price": "160 درهم", "cat": "غذائية", "img": "honey_aghmous.jpg"}, {"name": "Amalfi جل الاستحمام – فواكه حمراء ومتوسطي 750ml", "desc": "جل استحمام • تنظيف وترطيب • مناسب للعائلة", "price": "15 درهم", "cat": "عناية", "img": "shower_amalfi.jpg"}, {"name": "Dalan جل الاستحمام – الصبار ومعادن البحر والجريب فروت 450ml", "desc": "جل استحمام • تنظيف عميق • عناية يومية", "price": "13 درهم", "cat": "عناية", "img": "shower_dalan.jpg"}, {"name": "LUX جل الاستحمام – الأوركيد الساحر", "desc": "جل استحمام • عناية ورائحة منعشة", "price": "22 درهم", "cat": "عناية", "img": "shower_lux.jpg"}, {"name": "Chapo جل الاستحمام – جوز الهند و SPA", "desc": "جل استحمام • عناية وترطيب يومي", "price": "10 درهم", "cat": "عناية", "img": "shower_chapo.jpg"}, {"name": "Sunsilk Instant Repair و Black Shine", "desc": "شامبو • عناية بالشعر ولمعان", "price": "25 درهم", "cat": "عناية", "img": "shampoo_sunsilk.jpg"}, {"name": "Vitaia أوريغان وليمون", "desc": "شامبو • تنظيف وعناية يومية", "price": "23 درهم", "cat": "عناية", "img": "shampoo_vitaia.jpg"}, {"name": "Pantene ضد التساقط وضد القشرة", "desc": "شامبو • عناية بالشعر", "price": "30 درهم", "cat": "عناية", "img": "shampoo_pantene.jpg"}, {"name": "Prêt Plus – الطول والقوة + اليومي + ضد القشرة", "desc": "شامبو • اختيارات متعددة للعناية بالشعر", "price": "25 درهم", "cat": "عناية", "img": "shampoo_pretplus.jpg"}, {"name": "Chapo شامبو بالعسل والبيض", "desc": "شامبو • عناية وتنظيف", "price": "13 درهم", "cat": "عناية", "img": "shampoo_chapo.jpg"}, {"name": "ماء كولونيا Tulipán Negro – أنواع مختلفة", "desc": "ماء كولونيا • أنواع وروائح مختلفة", "price": "35 درهم", "cat": "عناية", "img": "cologne_tulipan.jpg"}, {"name": "عطر رجالي Miguel Palacio", "desc": "عطر رجالي • رائحة مميزة", "price": "35 درهم", "cat": "عناية", "img": "perfume_miguel.jpg"}, {"name": "Crest Cavity Protection", "desc": "معجون أسنان • حماية فعالة للأسنان واللثة", "price": "20 درهم", "cat": "عناية", "img": "toothpaste_crest.jpg"}, {"name": "Crest 3D White", "desc": "معجون أسنان • عناية وتبييض", "price": "25 درهم", "cat": "عناية", "img": "toothpaste_crest.jpg"}, {"name": "Signal Anti-Caries", "desc": "معجون أسنان • حماية من التسوس", "price": "12 درهم", "cat": "عناية", "img": "toothpaste_signal.jpg"}, {"name": "Dontodent Clear Fresh", "desc": "معجون أسنان • انتعاش وحماية", "price": "20 درهم", "cat": "عناية", "img": "toothpaste_dontodent.jpg"}, {"name": "رؤوس فرشاة Crest 3D White", "desc": "رؤوس فرشاة • عناية وتنظيف الأسنان", "price": "30 درهم", "cat": "عناية", "img": "toothbrush_oral.jpg"}, {"name": "Oral-B فرشاة الأسنان – باك 3 قطع", "desc": "فرشاة أسنان • باك 3 قطع", "price": "8 درهم", "cat": "عناية", "img": "toothbrush_oral.jpg"}, {"name": "Signal Triple D-Fense – فرشاة الأسنان", "desc": "فرشاة أسنان • تنظيف وحماية", "price": "15 درهم", "cat": "عناية", "img": "toothbrush_signal.jpg"}, {"name": "Signal Triple D-Fense – فرشاة الأسنان", "desc": "فرشاة أسنان • عرض بسعر مناسب", "price": "10 درهم", "cat": "عناية", "img": "toothbrush_signal.jpg"}, {"name": "شاي نعيلة 500g", "desc": "شاي أصيل • جودة عالية • مناسب للجلسات العائلية", "price": "70 درهم", "cat": "غذائية", "img": "tea_naaila.jpg"}, {"name": "شاي نعيلة – علبة سوداء", "desc": "شاي أصيل • مذاق مميز", "price": "30 درهم", "cat": "غذائية", "img": "tea_naaila.jpg"}, {"name": "شاي نعيلة – علب صغيرة", "desc": "شاي أصيل • حجم عملي", "price": "22 درهم", "cat": "غذائية", "img": "tea_naaila.jpg"}, {"name": "شاي الهمة فخرة ممتازة", "desc": "شاي أصيل • جودة عالية ومذاق أصيل", "price": "20 درهم", "cat": "غذائية", "img": "tea_alhimma.jpg"}, {"name": "Lilas Liladays Classic – 18 Extra Long Pocket / Sensation Coton", "desc": "فوط صحية • نعومة القطن • حماية طويلة حتى 12 ساعة", "price": "13 درهم", "cat": "عناية", "img": "sanitary_lilas.jpg"}, {"name": "IBO Vaiselle – ليمون / كلاسيك", "desc": "سائل غسل الصحون • إزالة الدهون • رغوة غنية • لطيف على اليدين", "price": "10 درهم", "cat": "تنظيف", "img": "dish_ibo.jpg"}, {"name": "Kalyon صابون اليدين السائل – 500ml", "desc": "جوز الهند أو زيت الزيتون أو الليمون • تركيبة لطيفة", "price": "12 درهم", "cat": "تنظيف", "img": "kalyon_hand.jpg"}, {"name": "Kalyon Rinse Aid ملمع غسالة الصحون – 500ml", "desc": "يمنع البقع • لمعان أفضل • تجفيف أفضل", "price": "20 درهم", "cat": "تنظيف", "img": "kalyon_rinse.jpg"}, {"name": "CHAPDOR Peanut Butter Crunchy", "desc": "زبدة الفول السوداني المقرمشة • Roasted Peanut • مناسبة للفطور والوجبات الخفيفة", "price": "30 درهم", "cat": "غذائية", "img": "peanut_chapdor.jpg"}];
+const grid=document.getElementById('productGrid'), filters=document.getElementById('filters');
+const cats=['الكل',...new Set(products.map(p=>p.cat))];
+filters.innerHTML=cats.map((c,i)=>`<button class="filter ${i===0?'active':''}" data-cat="${c}">${c}</button>`).join('');
 function render(cat='الكل'){
-  const list = cat==='الكل' ? items : items.filter(x=>x.cat===cat);
-  grid.innerHTML = list.map(x=>`
-    <article class="card">
-      <div class="card-img"><img src="assets/${x.img}" alt="${x.title}" loading="lazy"></div>
-      <div class="card-body">
-        <div class="tag">${x.cat}</div>
-        <h3>${x.title}</h3>
-        <button class="order-btn" onclick="orderProduct('${x.title.replaceAll("'","\\'")}')">📱 طلب عبر واتساب</button>
-      </div>
-    </article>`).join('');
+ const list=cat==='الكل'?products:products.filter(p=>p.cat===cat);
+ grid.innerHTML=list.map(p=>`<article class="card" onclick="orderProduct('${p.name.replaceAll("'","\\'")}','${p.price.replaceAll("'","\\'")}')" style="cursor:pointer">
+ <div class="card-img"><img src="assets/${p.img}" alt="${p.name}" loading="lazy" onerror="this.onerror=null;this.style.display='none';this.parentElement.classList.add('no-photo')"></div>
+ <div class="card-body"><div class="tag">${p.cat}</div><h3>${p.name}</h3><p>${p.desc}</p><div class="price">${p.price}</div>
+ <button type="button" class="order-btn" onclick="event.stopPropagation();orderProduct('${p.name.replaceAll("'","\\'")}','${p.price.replaceAll("'","\\'")}')">📱 طلب عبر واتساب</button></div></article>`).join('');
 }
-filters.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{
-  filters.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));
-  b.classList.add('active'); render(b.dataset.cat);
-});
-function orderProduct(name){
- const msg=`السلام عليكم، بغيت نشوف/نطلب: ${name} من متجر الوجدي`;
- window.open('https://wa.me/212721851643?text='+encodeURIComponent(msg),'_blank');
-}
+filters.querySelectorAll('.filter').forEach(b=>b.onclick=()=>{filters.querySelectorAll('.filter').forEach(x=>x.classList.remove('active'));b.classList.add('active');render(b.dataset.cat)});
 render();
-</script>
-</body>
-</html>
+</script><script>
+function orderProduct(name, price){
+  const msg = `السلام عليكم، بغيت نطلب: ${name} - ${price}`;
+  window.open('https://wa.me/212721851643?text='+encodeURIComponent(msg),'_blank');
+}
+</script></body></html>
