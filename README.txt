@@ -1,10 +1,17 @@
-متجر الوجدي — النسخة النظيفة
+متجر الوجدي — نسخة GitHub Pages النهائية
 
-الصور التي كانت صحيحة في النسخ السابقة تم الإبقاء عليها.
-المنتجات التي لم تكن لها صورة موثوقة تم إعطاؤها بطاقة باسم المنتج فقط، حتى لا تظهر صورة منتج آخر مكانها.
+مهم:
+- index.html و style.css و script.js و products.js يكونو في ROOT ديال repository.
+- جميع صور المنتجات موجودة داخل assets/.
+- ما تحطش الصور داخل assets بأسماء مختلفة.
+- GitHub Pages خاصو ينشر branch: main / root.
 
-ارفع:
-- index.html
-- مجلد assets كامل
+التركيب:
+index.html
+style.css
+script.js
+products.js
+.nojekyll
+assets/
 
-ويجب أن يكونا في نفس المستوى داخل GitHub.
+إذا كان repository فيه صور قديمة في ROOT، ماشي مشكل؛ الموقع الجديد كيستعمل assets/.
